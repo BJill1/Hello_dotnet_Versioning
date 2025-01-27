@@ -6,6 +6,10 @@ class Program
     {
         Console.WriteLine("Please enter a number");
         var num = int.Parse(Console.ReadLine());
-        Console.WriteLine("The number you entered is " + num);
+        if(num%2 == 0){
+            Console.WriteLine("The number you entered is even");
+        } else{
+            Console.WriteLine("The number you entered is odd");
+        }
     }
 }
